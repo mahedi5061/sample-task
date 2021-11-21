@@ -18,7 +18,7 @@ const ModalForUpdate = () => {
     setInfo(newInfo);
 }
 const handleSubmit = (e) => {
-  fetch(`http://localhost:8000/updateCourse/${id}`,{
+  fetch(`https://course-demo-task.herokuapp.com/updateCourse/${id}`,{
     method:'PATCH',
     headers:{'Content-Type': 'application/json'},
     body: JSON.stringify(info)

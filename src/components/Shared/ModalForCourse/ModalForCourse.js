@@ -27,7 +27,7 @@ const ModalForCourse = ({ modalIsOpen, closeModal }) => {
  
   const handleSubmit = (e) => {
      
-    fetch("http://localhost:8000/addCourse", {
+    fetch("https://course-demo-task.herokuapp.com/addCourse", {
       method: "POST",
       headers: {
         "content-type": "application/json",

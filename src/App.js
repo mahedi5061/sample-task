@@ -9,7 +9,7 @@ export const courseContext = createContext();
 function App() {
   const [course,setCourse] =  useState([]);
    useEffect(() => {
-    fetch('http://localhost:8000/allCourse')
+    fetch('https://course-demo-task.herokuapp.com/allCourse')
     .then(res=>res.json())
     .then(data =>{
       setCourse(data)

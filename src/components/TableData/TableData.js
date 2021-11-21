@@ -21,7 +21,7 @@ const TableData = () => {
     }
     const handleDelete=(id)=>{
      
-      fetch(`http://localhost:8000/delete/${id}`,{
+      fetch(`https://course-demo-task.herokuapp.com/delete/${id}`,{
         method:'DELETE',
     })
     .then(res=>res.json())
