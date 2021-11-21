@@ -54,8 +54,8 @@ const TableData = () => {
   {
     course.map((c,index)=>
  
-  <tbody >
-      <td>{index+1}</td>
+   <tbody >
+      <tr><td>{index+1}</td>
       <td style={{padding:"15px",fontSize:"20px"}}>{c?.course?.courseId}</td>
       <td style={{padding:"15px",fontSize:"20px"}}>{c?.course?.curriculum}</td>
       <td style={{padding:"15px",fontSize:"20px"}}>{c?.course?.class}</td>
@@ -67,7 +67,7 @@ const TableData = () => {
       <td style={{padding:"15px",fontSize:"20px"}}>{moment().format(c?.course?.classTime)}</td>
       <td style={{padding:"15px",fontSize:"20px"}}>{c?.course?.fee}</td>
        
-     <td className="d-flex gap-3">
+     <td className="d-flex gap-3" style={{padding:"45px",fontSize:"20px"}}>
        <Link to={`/view/${c._id}`}>
        <AiOutlineEye style={{ fontSize:"25px",cursor: "pointer",color:"orange"}}  /></Link>
        <Link to={`/update/${c._id}`}><FaEdit style={{ fontSize:"25px",cursor: "pointer",color:"teal"}} onClick={handleUpdate}/> </Link>
@@ -75,7 +75,7 @@ const TableData = () => {
          <button className="join">join class</button>
          
      </td>
-      
+     </tr>
   </tbody>
    )}
    
