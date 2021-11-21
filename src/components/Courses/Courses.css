@@ -1,0 +1,13 @@
+.courses{
+    font-size: 40px;
+    color:rgb(42, 40, 40);
+    font-weight: bold;
+}
+.new-course{
+    border-left: 4px solid black;
+    font-weight: bold;
+    padding:10px;
+    font-size: 30px;
+    color:rgb(20, 143, 143);
+   cursor: pointer;
+}

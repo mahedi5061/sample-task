@@ -1,0 +1,15 @@
+.nav-menu{
+    font-size:20px;
+    font-weight:bold;
+    padding:6px;
+    
+
+}
+ .menu-item{
+     color:rgb(20, 143, 143);
+     
+ }
+ .menu-item:hover{
+    color:rgb(20, 143, 143);
+    
+}
